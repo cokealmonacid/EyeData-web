@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'firebaseController@index');
+Route::get('/{testName}', 'firebaseController@show');

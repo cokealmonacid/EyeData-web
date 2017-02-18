@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-material-design.css">
     <link rel="stylesheet" type="text/css" href="/css/ripples.min.css">
 
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 

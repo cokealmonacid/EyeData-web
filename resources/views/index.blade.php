@@ -23,7 +23,7 @@
                         		<td>{!! ucfirst($data[0]) !!}</td>
                         		<td>{!! date('d/m/Y',$data[3]/1000) !!}</td>
                         		<td>{!! $data[2] !!} Seg</td>
-                        		<td><a href="#">Ver más</a></td>
+                        		<td><a href="{!! action('firebaseController@show', $data[0]) !!}">Ver más</a></td>
                         	</tr>
                         @endforeach
                         </tbody>

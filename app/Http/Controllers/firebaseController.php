@@ -42,4 +42,17 @@ class firebaseController extends Controller
 
     	return view('index', compact('response'));
     }
+
+    public function show($testName)
+    {
+    	$firebase = new \Firebase\Client(env('FIREBASE_URL'));
+
+    	$testInfo = $firebase->child('/data/' . $testName . '_config')->get();
+
+    	$key = array_keys($testInfo);
+
+    	$testInfo = $testInfo[$key[0]];
+
+    	return view('detail', compact('testInfo'));
+    }
 }
