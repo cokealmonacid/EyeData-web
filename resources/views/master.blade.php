@@ -15,14 +15,15 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src=/js/heatmap.js></script>
+<script src=/js/buttonAction.js></script>
 </head>
 <body>
 
 @include('shared.navbar')
 
 @yield('content')
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script src="/js/ripples.min.js"></script>

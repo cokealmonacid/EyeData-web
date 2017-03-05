@@ -13,3 +13,4 @@
 
 Route::get('/', 'firebaseController@index');
 Route::get('/{testName}', 'firebaseController@show');
+Route::get('/makeHeatMap/{testName}', 'firebaseController@makeHeatMap');
